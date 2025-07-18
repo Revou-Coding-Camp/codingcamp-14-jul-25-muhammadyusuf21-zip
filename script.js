@@ -27,6 +27,7 @@ function validateForm() {
     } else {
         messageOutput.innerHTML = `Thank you, <strong>${name}</strong>, for your message!`;
         nameInput.value = '';
+        messageInput.value = '':
         console.log("Message submitted by:", name);
     }
 }
