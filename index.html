@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900 text-white font-sans min-h-screen">
+
+  <!-- Header -->
+  <header class="backdrop-blur bg-white/10 text-white shadow-md sticky top-0 z-50 p-6 flex justify-between items-center">
+    <div class="flex items-center gap-4">
+        <div class="h-14 w-14 rounded-full bg-[url('https://picsum.photos/200')] bg-cover ring-2 ring-white shadow-lg"></div>
+        <h1 class="text-2xl md:text-3xl font-bold tracking-wide text-white items-center">MUHAMMAD YUSUF</h1>
+      </div>      
+    <nav class="flex gap-4 md:gap-6 text-sm md:text-base font-medium">
+      <a href="#home-page" class="hover:text-blue-300 transition">Home</a>
+      <a href="#about" class="hover:text-blue-300 transition">About</a>
+      <a href="#skills" class="hover:text-blue-300 transition">Skills</a>
+      <a href="#projects" class="hover:text-blue-300 transition">Projects</a>
+      <a href="#message-us" class="hover:text-blue-300 transition">Message-us</a>
+      <a href="#sosmed" class="hover:text-blue-300 transition">Sosmed</a>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-6xl mx-auto px-4 md:px-8 py-10">
+
+    <!-- Home -->
+    <section id="home-page" class="text-center mb-20">
+      <h1 class="text-5xl font-extrabold mb-4 text-blue-700">Hello, <span id="welcome-user" class="text-Black">[User]</span>!</h1>
+      <p class="text-lg text-black mb-8">Welcome to my personal portfolio website. I’m excited to show you my work.</p>
+      <div class="w-full h-64 rounded-2xl bg-[url('https://picsum.photos/800/300')] bg-cover bg-center shadow-2xl ring-2 ring-white/20 mx-auto"></div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="mb-20 bg-white/10  rounded-xl p-8 shadow-xl">
+      <h2 class="text-3xl font-bold text-center mb-4 text-white">About Me</h2>
+      <p class="text-center text-blue-100 leading-relaxed">
+        Halo, saya Muhammad Yusuf — seorang web developer yang kreatif dan detail-oriented dengan semangat tinggi dalam membangun website yang responsif, menarik, dan mudah digunakan. Saya menikmati proses mengubah ide menjadi produk digital yang berfungsi optimal dan memiliki tampilan yang profesional.
+
+        Dengan latar belakang di bidang HTML, CSS, dan JavaScript, saya terus belajar dan berkembang mengikuti perkembangan teknologi terbaru. Fokus saya adalah menciptakan pengalaman pengguna yang maksimal, memperhatikan performa, desain yang bersih, dan kompatibilitas lintas perangkat.
+        
+        Di luar dunia coding, saya adalah pribadi yang terbuka untuk kolaborasi, senang belajar hal baru, dan selalu antusias dalam mengembangkan diri. Mari bekerja sama dan ciptakan sesuatu yang luar biasa!
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="mb-20 bg-white/10 backdrop-blur rounded-xl p-8 shadow-xl">
+      <h2 class="text-3xl font-bold text-center mb-6 text-white">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center text-blue-200 font-semibold">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mb-20">
+      <h2 class="text-3xl font-bold text-center mb-8 text-blue-700">Projects</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="bg-white/10 backdrop-blur rounded-xl shadow-lg p-6">
+          <h3 class="text-xl font-semibold mb-2 text-blue-500">Project One</h3>
+          <p class="text-blue-600">Sebuah website responsif untuk memesan makanan secara online, dilengkapi dengan fitur pencarian menu, keranjang belanja, dan notifikasi pesanan. Dibangun menggunakan HTML, CSS, dan JavaScript murni tanpa framework.</p>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-xl shadow-lg p-6">
+          <h3 class="text-xl font-semibold mb-2 text-blue-500">Project Two</h3>
+          <p class="text-blue-600">  Portofolio digital yang menampilkan profil, skill, proyek, dan form kontak. Dirancang dengan desain modern 
+            dan interaktif menggunakan Tailwind CSS serta JavaScript untuk validasi dan pengalaman pengguna yang lebih baik.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="message-us" class="mb-20 bg-white/10 backdrop-blur rounded-xl p-8 shadow-xl">
+      <h2 class="text-3xl font-bold text-center mb-6 text-white">Message-us</h2>
+      <form class="max-w-lg mx-auto">
+        <div class="mb-4">
+          <label for="name-input" class="block text-blue-100 font-medium mb-2">Your Name</label>
+          <input type="text" id="name-input" name="name"
+            class="w-full bg-white/20 backdrop-blur border border-white/30 text-white rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300 transition" />
+        </div>
+        <button onclick="validateForm();" type="button"
+          class="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 rounded-lg hover:opacity-90 transition font-semibold shadow-lg">
+          Send Message
+        </button>
+      </form>
+      <div id="message-output" class="text-center mt-6 text-lg font-medium text-blue-200">Result:</div>
+    </section>
+  </main>
+  
+  <nav id="sosmed" class="nav-sosmed">
+      <a href="https://facebook.com/username" target="_blank" class="social-link">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://twitter.com/username" target="_blank" class="social-link">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://www.instagram.com/mhdysf.21/" target="_blank" class="social-link">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.linkedin.com/feed/" target="_blank" class="social-link">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://github.com/muhammadyusuf21-zip" target="_blank" class="social-link">
+    <i class="fab fa-github"></i>
+  </nav>
+ 
+
+  <!-- Footer -->
+  <footer class="text-center py-6 border-t border-white/20 mt-10 text-black">
+    &copy; 2025 Muhammad Yusuf. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="kscript.js"></script>
+</body>
+
+</html>

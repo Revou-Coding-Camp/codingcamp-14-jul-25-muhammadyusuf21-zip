@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    margin-bottom: 15px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    margin-top: 40px;
+}
+
+.nav-name{
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.nav-sosmed {
+    display: flex;
+    justify-content: center;     /* posisi horizontal ke tengah */
+    align-items: center;
+    gap: 70px;                   /* jarak antar ikon */
+    margin-top: 30px;
+  }
+  
+  .social-link i {
+    font-size: 32px;             /* ukuran ikon */
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-link i:hover {
+    color: #60a5fa;              /* warna saat hover */
+    transform: scale(1.2);       /* efek membesar saat hover */
+  }
+  
